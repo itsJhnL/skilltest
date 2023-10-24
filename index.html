@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="" content="">
+    <title>Los Angeles Mountains</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+        /* Common Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+            outline: none;
+            text-decoration: none;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .section_bg {
+            background-image: url('/images/background.png');
+            width: auto;
+            height: 100vh;
+            background-size: cover;
+        }
+
+        .section2_bg {
+            background-image: url('/images/Bg.png');
+            width: auto;
+            height: 100vh;
+            background-size: cover;
+        }
+
+        .accordion1_bg {
+            background-image: url('/images/climb_tab1.png');
+            width: auto;
+            height: 80vh;
+            background-size: cover;
+            background-position: bottom;
+        }
+
+        .accordion2_bg {
+            background-image: url('/images/climb_tab2.png');
+            width: auto;
+            height: 80vh;
+            background-size: cover;
+            background-position: bottom;
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            .footer {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            .hide {
+                display: none;
+            }
+        }
+
+        @media  (min-width: 1024px) {
+            .hide {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- Start of Section 1 -->
+
+        <section class="section_bg">
+            <div class="px-14 pt-3 max-w-5xl mx-auto">
+                <div class="flex items-center justify-between">
+                    <div class="flex">
+                        <a href="#">
+                            <img src="/images/logo.png" alt="Mountain Logo">
+                        </a>
+                    </div>
+                    <div class="flex gap-14 mx-5">
+
+                        <a href="#history_section" class="border-b-2 border-white text-white font-semibold"><em>01.
+                                HISTORY</em></a>
+
+                        <a href="#climb_section" class="border-b-2 border-white text-white font-semibold"><em>02.
+                                TEAM</em></a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Section 1 -->
+
+        <div id="history_section"></div>
+
+        <!-- Start Sticky Nav -->
+        <section class="sticky z-50 bg-white top-0 py-2">
+            <div class="max-w-5xl mx-auto">
+                <div class="flex items-center justify-between">
+                    <a href=""><img src="/images/logo_mountains.png" alt="Mountain Logo"></a>
+                    <div class="flex gap-14 mx-5">
+                        <a href="#history_section" class="border-b-2 font-semibold text-[#4d4d4d]"><strong><em>01.
+                                    HISTORY</em></strong></a>
+                        <a href="#climb_section" class="border-b-2 font-semibold text-[#4d4d4d]"><strong><em>02.
+                                    TEAM</em></strong></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Sticky Nav -->
+
+        <!-- Start -->
+        <section class="section2_bg relative overflow-hidden">
+            <div class="max-w-5xl mx-auto">
+                <div class="pt-20">
+                    <img src="/images/01history.png" alt="">
+                </div>
+                <div class="px-10">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id voluptas corporis tempora
+                        consectetur fuga, laudantium unde! Laudantium, beatae suscipit perspiciatis tenetur doloribus
+                        debitis facilis alias culpa ab impedit quos dolore ad possimus repudiandae ducimus doloremque
+                        voluptatem id voluptates ratione! Dolorem possimus eveniet, sapiente quaerat dolor voluptas
+                        facilis nostrum doloribus consequatur!</p>
+                </div>
+            </div>
+            <div class="absolute bottom-0 bg-[#414f6b]/80 py-28 w-full"></div>
+            <div class="flex items-center justify-center">
+                <div class="absolute py-28 bottom-0 w-2/4 overflow-hidden">
+                    <div id="default-carousel" data-carousel="slide">
+                        <!-- Item 1 -->
+                        <div class="flex items-center justify-center gap-2 hidden duration-700 ease-in-out"
+                            data-carousel-item>
+                            <div class="grid sm:grid-cols-1 lg:grid-cols-4 gap-2">
+                                <img src="/images/thumb1.png" alt="..." class="">
+                                <img src="/images/thumb2.png" alt="..." class="hide">
+                                <img src="/images/thumb1.png" alt="..." class="hide">
+                                <img src="/images/thumb2.png" alt="..." class="hide">
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="flex items-center justify-center gap-2 hidden duration-700 ease-in-out"
+                            data-carousel-item>
+                            <div class="grid sm:grid-cols-1 lg:grid-cols-4 gap-2">
+                                <img src="/images/thumb2.png" alt="..." class="">
+                                <img src="/images/thumb1.png" alt="..." class="hide">
+                                <img src="/images/thumb2.png" alt="..." class="hide">
+                                <img src="/images/thumb1.png" alt="..." class="hide">
+                            </div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="flex items-center justify-center gap-2 hidden duration-700 ease-in-out"
+                            data-carousel-item>
+                            <div class="grid sm:grid-cols-1 lg:grid-cols-4 gap-2">
+                                <img src="/images/thumb1.png" alt="..." class="">
+                                <img src="/images/thumb1.png" alt="..." class="hide">
+                                <img src="/images/thumb2.png" alt="..." class="hide">
+                                <img src="/images/thumb2.png" alt="..." class="hide">
+                            </div>
+                        </div>
+                        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                            <button type="button" class="w-2 h-2 rounded-full" aria-current="true" aria-label="Slide 1"
+                                data-carousel-slide-to="0"></button>
+                            <button type="button" class="w-2 h-2 rounded-full" aria-current="false" aria-label="Slide 2"
+                                data-carousel-slide-to="1"></button>
+                            <button type="button" class="w-2 h-2 rounded-full" aria-current="false" aria-label="Slide 3"
+                                data-carousel-slide-to="2"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End -->
+        <div id="climb_section" class="py-10"><!-- Scroll Smooth Behavior--></div>
+        <!-- Start -->
+        <section id="climb_section">
+            <div class="px-10 max-w-5xl mx-auto flex items-center justify-center gap-5">
+                <img src="/images/02climb.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, at? A numquam nobis odit labore
+                    maxime ab molestias hic. Quo officia et unde fuga ipsam distinctio voluptas optio, id nam?</p>
+            </div>
+            <div class="pt-14"></div>
+
+            <!-- READ THE DETAILS AGAIN, Desktop view => TABS, Mobile view => Accordion -->
+            <div class="bg-[#414f6b]">
+                <div id="accordion-collapse" data-accordion="collapse" class="flex overflow-hidden max-w-5xl mx-auto">
+
+                    <!-- Mountain 1 -->
+                    <h1 id="#accordion-collapse-heading-1" class=" text-[#414f6b] font-bold">
+                        <button type="button" class="p-3"
+                            data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                            aria-controls="accordion-collapse-body-1">
+                            <p class="border-b-2 border-[#414f6b]"> MOUNTAIN 1 </p>
+                        </button>
+                    </h1>
+
+                    <!-- Mountain 2 -->
+                    <h1 id="#accordion-collapse-heading-2" class=" text-[#9fa7b5] font-bold">
+                        <button type="button" class="p-3" data-accordion-target="#accordion-collapse-body-2"
+                            aria-expanded="true" aria-controls="accordion-collapse-body-2">
+                            <p class="border-b-2 border-[#414f6b]"> MOUNTAIN 2 </p>
+                        </button>
+                    </h1>
+                </div>
+            </div>
+
+            <!-- bg accordion image start-->
+            <div>
+                <div id="accordion-collapse-body-1" class="accordion1_bg"
+                    aria-labelledby="accordion-collapse-heading-1">
+                    <div class="p-24 max-w-5xl mx-auto">
+                        <img src="/images/schedule-content.png" alt="">
+                    </div>
+                </div>
+                <div id="accordion-collapse-body-2" class="accordion2_bg"
+                    aria-labelledby="accordion-collapse-heading-2">
+                    <div class="p-24 max-w-5xl mx-auto">
+                        <img src="/images/schedule-content.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- bg accordion image end-->
+
+            <!-- Start Footer -->
+            <div class="bg-[#414f6b]">
+                <div class="footer max-w-5xl mx-auto py-5 flex items-center justify-between">
+                    <img src="/images/footerLogo.png" alt="">
+                    <img src="/images/copy.png" alt="">
+                </div>
+            </div>
+            <!-- End Footer -->
+
+        </section>
+        <!-- End -->
+    </div>
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
